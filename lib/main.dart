@@ -146,16 +146,13 @@ class _NotificationDialogScreenState extends State<NotificationDialogScreen> {
                     // Cabecera tipo Notificacion Android
                     Row(
                       children: [
-                        Container(
-                          padding: const EdgeInsets.all(6),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF06B6D4).withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: const Icon(
-                            Icons.language_rounded,
-                            color: Color(0xFF06B6D4),
-                            size: 18,
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            'assets/icon.png',
+                            width: 26,
+                            height: 26,
+                            fit: BoxFit.contain,
                           ),
                         ),
                         const SizedBox(width: 10),
